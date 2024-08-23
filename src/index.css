@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* App.css */
+
+.app {
+  text-align: center;
+}
+
+.start-screen {
+  margin: 20px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.board {
+  display: inline-block;
+  margin: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.leaderboard {
+  margin: 20px;
+}
+
+.leaderboard h2 {
+  font-size: 24px;
+}
+
+.leaderboard p {
+  font-size: 18px;
+}

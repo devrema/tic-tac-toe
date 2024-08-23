@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+body {
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-button {
+  padding: 10px 20px;
+  background-color: #555;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #666;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.name-input {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #444;
+  border: 1px solid #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.name-input::placeholder {
+  color: #888;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background-color: #444;
+  border: 1px solid #555;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.square:hover {
+  background-color: #555;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* App.css */
+
+.app {
+  text-align: center;
+}
+
+.start-screen {
+  margin: 20px;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.board {
+  display: inline-block;
+  margin: 20px;
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.leaderboard {
+  margin: 20px;
+}
+
+.leaderboard h2 {
+  font-size: 24px;
+}
+
+.leaderboard p {
+  font-size: 18px;
 }
